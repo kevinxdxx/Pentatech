@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Details_events.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="Class Details_events">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -140,7 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -1056,11 +1054,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518130445184</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Class Details_events">
+      <created>1518133637097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518133637097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5391000" />
+    <option name="totallyTimeSpent" value="5678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1133,7 +1138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Class Instrument" />
     <MESSAGE value="Class Singer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Singer" />
+    <MESSAGE value="Class Details_events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Details_events" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
