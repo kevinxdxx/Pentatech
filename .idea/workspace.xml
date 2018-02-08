@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="Class Instrument">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Singer.java" />
+    <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -431,7 +430,7 @@
       <updated>1518123891350</updated>
       <workItem from="1518123893979" duration="64000" />
       <workItem from="1518124939824" duration="1132000" />
-      <workItem from="1518127115373" duration="3303000" />
+      <workItem from="1518127115373" duration="3330000" />
     </task>
     <task id="LOCAL-00001" summary="Class Instrument">
       <created>1518128151759</created>
@@ -440,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518128151759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Class Singer">
+      <created>1518130445184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518130445184</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4499000" />
+    <option name="totallyTimeSpent" value="4526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -489,7 +495,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Class Instrument" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Instrument" />
+    <MESSAGE value="Class Singer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Singer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
