@@ -1,5 +1,7 @@
 package pe.edu.pe.javawebuserlist;
 
+import com.oracle.wls.shaded.org.apache.xpath.operations.String;
+
 public class User {
     private int id;
     private String nickname;
