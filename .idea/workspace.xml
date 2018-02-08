@@ -96,8 +96,8 @@
       <file leaf-file-name="Gender.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Gender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="e#310#311#0" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
@@ -336,7 +336,7 @@
       <workItem from="1518123893979" duration="64000" />
       <workItem from="1518124939824" duration="1132000" />
       <workItem from="1518127115373" duration="3330000" />
-      <workItem from="1518131599152" duration="2205000" />
+      <workItem from="1518131599152" duration="2556000" />
     </task>
     <task id="LOCAL-00001" summary="Class Instrument">
       <created>1518128151759</created>
@@ -506,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518133835814</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Class Gender">
+      <created>1518133847748</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1518133847748</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6731000" />
+    <option name="totallyTimeSpent" value="7082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -737,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="e#310#311#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
