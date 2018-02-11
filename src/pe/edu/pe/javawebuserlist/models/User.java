@@ -1,6 +1,4 @@
-package pe.edu.pe.javawebuserlist;
-
-import com.oracle.wls.shaded.org.apache.xpath.operations.String;
+package pe.edu.pe.javawebuserlist.models;
 
 public class User {
     private int id;
