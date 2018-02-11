@@ -4,14 +4,29 @@ public class User {
     private int id;
     private String nickname;
     private String password;
-    private String type;
+    private String fisrtName;
+    private String lastName;
+    private int age;
+    private String adrress;
+    private String email;
+    private int phone;
 
-    public User(int id, String nickname, String password, String type) {
+
+
+    public User() {
+    }
+    public User(int id, String nickname, String password, String fisrtName, String lastName, int age, String adrress, String email, int phone) {
         this.setId(id);
         this.setNickname(nickname);
         this.setPassword(password);
-        this.setType(type);
+        this.setFisrtName(fisrtName);
+        this.setLastName(lastName);
+        this.setAge(age);
+        this.setAdrress(adrress);
+        this.setEmail(email);
+        this.setPhone(phone);
     }
+
 
     public int getId() {
         return id;
@@ -40,12 +55,57 @@ public class User {
         return this;
     }
 
-    public String getType() {
-        return type;
+    public String getFisrtName() {
+        return fisrtName;
     }
 
-    public User setType(String type) {
-        this.type = type;
+    public User setFisrtName(String fisrtName) {
+        this.fisrtName = fisrtName;
+        return this;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public User setLastName(String lastName) {
+        this.lastName = lastName;
+        return this;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public User setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public String getAdrress() {
+        return adrress;
+    }
+
+    public User setAdrress(String adrress) {
+        this.adrress = adrress;
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public User setEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public User setPhone(int phone) {
+        this.phone = phone;
         return this;
     }
 }

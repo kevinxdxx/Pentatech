@@ -1,6 +1,6 @@
 package pe.edu.pe.javawebuserlist.models;
 
-import java.sql.Connection;
+        import java.sql.Connection;
 
 public class BaseEntity {
     private Connection connection;
