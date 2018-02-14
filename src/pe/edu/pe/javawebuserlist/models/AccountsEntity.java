@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccountsEntity extends BaseEntity{
-    private static String DEFAULT_SQL = "SELECT + FROM pt_mysql.accounts";
+    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.accounts";
 
     private List<Account> findByCriteria(String sql){
         List<Account> accounts;
@@ -41,4 +41,48 @@ public class AccountsEntity extends BaseEntity{
         return (accounts != null ? accounts.get(0):null);
     }
 
+
+    private int getMaxId() {
+        String sql = "SELECT MAX(account_id) AS max_id FROM accounts";
+        if (getConnection() != null) {
+            try {
+                ResultSet resultSet = getConnection().createStatement().executeQuery(sql);
+                return resultSet.next() ?
+                        resultSet.getInt("max_id") : 0;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return 0;
+    }
+
+    private int updateByCriteria(String sql) {
+        if (getConnection() != null) {
+            try {
+                return getConnection()
+                        .createStatement()
+                        .executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return 0;
+    }
+
+
+
+    public Account create(String type){
+        if (findByCriteria(type) == null){
+            if (getConnection() != null){
+                String sql = "INSERT INTO accounts(account_id, accounts_type) VALUES(" +
+                        String.valueOf(getMaxId() +1 ) +", '" + type + "')";
+                int result = updateByCriteria(sql);
+                if(result > 0){
+                    Account account = new Account(getMaxId(),type);
+                    return account  ;
+                }
+            }
+        }
+        return null;
+    }
 }

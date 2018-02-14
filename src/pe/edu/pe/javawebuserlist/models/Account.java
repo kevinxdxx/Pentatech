@@ -4,12 +4,12 @@ public class Account {
     private String id;
     private String type;
 
-    public Account(String id, String type) {
+    public Account() {
         this.id = id;
         this.type = type;
     }
 
-    public Account() {
+    public Account(int maxId, String type) {
 
     }
 
