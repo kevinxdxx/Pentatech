@@ -4,7 +4,7 @@ public class User {
     private String id;
     private String nickname;
     private String password;
-    private String fisrtName;
+    private String firstName;
     private String lastName;
     private int age;
     private String adrress;
@@ -15,11 +15,11 @@ public class User {
 
     public User() {
     }
-    public User(String id, String nickname, String password, String fisrtName, String lastName, int age, String adrress, String email, int phone) {
+    public User(String id, String nickname, String password, String firstName, String lastName, int age, String adrress, String email, int phone) {
         this.setId(id);
         this.setNickname(nickname);
         this.setPassword(password);
-        this.setFisrtName(fisrtName);
+        this.setFirstName(firstName);
         this.setLastName(lastName);
         this.setAge(age);
         this.setAdrress(adrress);
@@ -55,12 +55,12 @@ public class User {
         return this;
     }
 
-    public String getFisrtName() {
-        return fisrtName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public User setFisrtName(String fisrtName) {
-        this.fisrtName = fisrtName;
+    public User setFirstName(String fisrtName) {
+        this.firstName = fisrtName;
         return this;
     }
 
