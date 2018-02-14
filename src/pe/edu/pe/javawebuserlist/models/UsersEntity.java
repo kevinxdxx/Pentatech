@@ -114,7 +114,7 @@ public class UsersEntity extends BaseEntity
 
     public boolean update(User user)
     {
-        if (findByFirstname(user.getFirstName() != null))
+        if (findByFirstname(user.getFirstName()) != null)
             return false;
         return updateByCriteria("UPDATE users SET first_name= '"+
         user.getFirstName()+"'"+"WHERE id_user="+
