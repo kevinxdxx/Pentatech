@@ -9,6 +9,10 @@ public class Account {
         this.type = type;
     }
 
+    public Account() {
+
+    }
+
     public String getId() {
         return id;
     }

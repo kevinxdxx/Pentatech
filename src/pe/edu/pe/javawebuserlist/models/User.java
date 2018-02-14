@@ -1,7 +1,7 @@
 package pe.edu.pe.javawebuserlist.models;
 
 public class User {
-    private int id;
+    private String id;
     private String nickname;
     private String password;
     private String fisrtName;
@@ -15,7 +15,7 @@ public class User {
 
     public User() {
     }
-    public User(int id, String nickname, String password, String fisrtName, String lastName, int age, String adrress, String email, int phone) {
+    public User(String id, String nickname, String password, String fisrtName, String lastName, int age, String adrress, String email, int phone) {
         this.setId(id);
         this.setNickname(nickname);
         this.setPassword(password);
@@ -28,11 +28,11 @@ public class User {
     }
 
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public User setId(int id) {
+    public User setId(String id) {
         this.id = id;
         return this;
     }
