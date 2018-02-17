@@ -11,6 +11,9 @@ public class Comment {
         CreatedIn = createdIn;
     }
 
+    public Comment() {
+    }
+
     public String getId() {
         return id;
     }

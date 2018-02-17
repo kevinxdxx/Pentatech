@@ -9,6 +9,9 @@ public class Place {
         this.name = name;
     }
 
+    public Place() {
+    }
+
     public String getId() {
         return id;
     }

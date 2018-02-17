@@ -7,6 +7,9 @@ public class Suscription {
         this.setId(id);
     }
 
+    public Suscription() {
+    }
+
     public String getId() {
         return id;
     }
