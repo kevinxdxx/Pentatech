@@ -7,7 +7,7 @@ import java.util.List;
 
 public class UsersEntity extends BaseEntity
 {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql";
+    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.users";
     private List<User> findByCriteria(String sql)
     {
         List<User> users;

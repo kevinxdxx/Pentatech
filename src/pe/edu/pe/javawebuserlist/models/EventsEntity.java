@@ -31,12 +31,12 @@ public class EventsEntity extends BaseEntity {
         return findByCriteria(DEFAULT_SQL);
     }
     public Event findById(String id){
-        List<Event> events = findByCriteria(DEFAULT_SQL+ "WHERE event_id = "+ String.valueOf(id));
+        List<Event> events = findByCriteria(DEFAULT_SQL+ "WHERE id_event = "+ String.valueOf(id));
         return (events != null ? events.get(0): null);
     }
 
     public Event findByDate(String date){
-        List<Event> events = findByCriteria(DEFAULT_SQL + "WHERE event_date = " + String.valueOf(date));
+        List<Event> events = findByCriteria(DEFAULT_SQL + "WHERE date = " + String.valueOf(date));
         return (events != null ? events.get(0): null);
     }
 

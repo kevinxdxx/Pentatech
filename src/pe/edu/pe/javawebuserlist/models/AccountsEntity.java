@@ -36,8 +36,8 @@ public class AccountsEntity extends BaseEntity{
         return (accounts !=null ? accounts.get(0) : null);
     }
 
-    public Account findBytype(String type){
-        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE accounts_type = ' " + type + "'");
+    public Account findByType(String type){
+        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE type = ' " + type + "'");
         return (accounts != null ? accounts.get(0):null);
     }
 
@@ -74,7 +74,7 @@ public class AccountsEntity extends BaseEntity{
     public Account create(String type){
         if (findByCriteria(type) == null){
             if (getConnection() != null){
-                String sql = "INSERT INTO accounts(account_id, accounts_type) VALUES(" +
+                String sql = "INSERT INTO accounts(id_accounts, type) VALUES(" +
                         String.valueOf(getMaxId() +1 ) +", '" + type + "')";
                 int result = updateByCriteria(sql);
                 if(result > 0){

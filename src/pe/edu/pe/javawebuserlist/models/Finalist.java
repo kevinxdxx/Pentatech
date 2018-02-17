@@ -7,6 +7,9 @@ public class Finalist {
         this.id = id;
     }
 
+    public Finalist() {
+    }
+
     public String getId() {
         return id;
     }

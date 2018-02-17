@@ -11,6 +11,9 @@ public class Postevent {
         this.setQuantity(quantity);
     }
 
+    public Postevent() {
+    }
+
     public String getId() {
         return id;
     }
