@@ -11,7 +11,10 @@ public class Mediacontent {
             this.url = url;
         }
 
-        public String getId() {
+    public Mediacontent() {
+    }
+
+    public String getId() {
             return id;
         }
 
