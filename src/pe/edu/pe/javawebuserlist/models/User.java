@@ -27,6 +27,10 @@ public class User {
         this.setPhone(phone);
     }
 
+    public User(String id, String firstName) {
+
+    }
+
 
     public String getId() {
         return id;

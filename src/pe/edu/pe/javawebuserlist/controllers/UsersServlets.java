@@ -63,7 +63,7 @@ public class UsersServlets extends HttpServlet {
             url = "editUsers.jsp";
         }
 
-        /*/ action = update
+        //action = update
         if(action.equalsIgnoreCase("update")) {
             String id = request.getParameter("id");
             String firstName = request.getParameter("first_name");
@@ -71,7 +71,7 @@ public class UsersServlets extends HttpServlet {
             request.setAttribute("users", service.findAllUsers());
             url = "listUsers.jsp";
         }
-        request.getRequestDispatcher(url).forward(request, response);*/
+        request.getRequestDispatcher(url).forward(request, response);
     }
 
     private Connection getConnection()
