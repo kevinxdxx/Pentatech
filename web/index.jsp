@@ -40,7 +40,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#what">Quienes somos</a></li>
-            <li><a href="#find">Find Musics</a></li>
+            <li><a href="findMusician.jsp">Find Musics</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#login">Log In</a></li>
             <li><a href="#singm">Sing Up Music</a></li>
