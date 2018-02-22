@@ -1,5 +1,7 @@
 package pe.edu.pe.javawebuserlist.models;
 
+import java.util.List;
+
 public class User {
     private String id;
     private String nickname;
@@ -29,6 +31,9 @@ public class User {
 
     public User(String id, String firstName) {
 
+    }
+
+    public User(List<User> users) {
     }
 
 
