@@ -38,7 +38,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="comentary.jsp">Home</a></li>
                         <li class="active"><a href="#">Quienes somos</a></li>
                         <li><a href="#find">Find Musics</a></li>
                         <li><a href="#events">Events</a></li>

@@ -36,7 +36,7 @@ public class UsersServlets extends HttpServlet {
     private void processRequest(String method, HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
         String action = request.getParameter("action");
-        String Url = "index.jsp";
+        String Url = "comentary.jsp";
         PtService service = new PtService();
         service.setConnection(getConnection());
 
