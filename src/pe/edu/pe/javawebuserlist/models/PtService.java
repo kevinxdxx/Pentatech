@@ -1,6 +1,10 @@
 package pe.edu.pe.javawebuserlist.models;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 public class PtService
@@ -10,6 +14,14 @@ public class PtService
 
     private Connection getConnection()
     {
+        if(connection == null) {
+            try {
+                connection = ((DataSource) InitialContext.doLookup("jdbc/MySQLDataSource")).getConnection();
+            }catch (NamingException | SQLException e){
+                e.printStackTrace();
+
+            }
+        }
         return connection;
     }
 
@@ -33,26 +45,31 @@ public class PtService
 
     public List<User> findAllUsers()
     {
-        return getConnection() != null ? getUsersEntity().findAll() : null;
+        return getUsersEntity() != null ?
+                getUsersEntity().findAll() : null;
     }
 
     public User findUserById(String id)
     {
-        return getConnection() != null ? getUsersEntity().findById(id) : null;
+        return getUsersEntity() != null ?
+                getUsersEntity().findById(id) : null;
     }
 
     public User findUserByFirstname(String firstName)
     {
-        return getConnection() != null ? getUsersEntity().findByFirstname(firstName) : null;
+        return getUsersEntity() != null ?
+                getUsersEntity().findByFirstname(firstName) : null;
     }
 
     public User createUser(String firstName)
     {
-        return getConnection() != null ? getUsersEntity().create(firstName) : null;
+        return getUsersEntity() != null ?
+                getUsersEntity().create(firstName) : null;
     }
 
     public boolean updateUser(User user)
     {
-        return getConnection() != null ? getUsersEntity().update(user) : false;
+        return getUsersEntity() != null ?
+                getUsersEntity().update(user) : false;
     }
 }
