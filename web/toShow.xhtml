@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="To Show Users"/>
+    <h:dataTable value="#{ptBean.users}" var="user">
+
+        <h:column>
+            <f:facet name="header">Id</f:facet>
+            #{user.id}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Nickname</f:facet>
+            #{user.nickname}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">pass</f:facet>
+            #{user.password}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">first name</f:facet>
+            #{user.firstName}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">last name</f:facet>
+            #{user.lastName}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">age</f:facet>
+            #{user.age}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">email</f:facet>
+            #{user.email}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">phone</f:facet>
+            #{user.phone}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">description</f:facet>
+            #{user.description}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Pentactions</f:facet>
+            <h:form>
+                <h:commandButton value="Edit User" action="#{ptBean.editUser(user)}"/>
+                <h:commandButton value="Update" action="#{ptBean.updateUser(user)}"/>
+            </h:form>
+        </h:column>
+
+    </h:dataTable>
+    <h:form>
+        <h:commandButton value="Create User" action="#{ptBean.createUser}"/>
+    </h:form>
+
+</f:view>
+</html>

@@ -6,6 +6,12 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-    <h:outputLabel value="Hello, world"/>
+    <h:messages/>
+    <h:form>
+        <h:outputLabel value="Users" var="user"/>
+        <h:form>
+            <h:commandButton value="To Show Users" action="toShow"/>
+        </h:form>
+    </h:form>
 </f:view>
 </html>

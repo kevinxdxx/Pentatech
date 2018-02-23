@@ -35,16 +35,16 @@ public class PtBean implements Serializable{
         return "success";
     }
     public String createUser(){
-        this.setUser(new User(this.getUsers()));
+        this.setUser(this.getUser());
         return "success";
     }
-    public String editUser(){
+    public String editUser(User user){
         this.setUser(user);
         return "success";
     }
-    public String updateUser(){
+    public String updateUser(User user){
         service.updateUser(this.getUser());
-        return "seccesss";
+        return "success";
     }
 }
 
