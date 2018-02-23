@@ -9,24 +9,26 @@ public class User {
     private String firstName;
     private String lastName;
     private int age;
-    private String adrress;
+    private String address;
     private String email;
     private int phone;
+    private String description;
 
 
 
     public User() {
     }
-    public User(String id, String nickname, String password, String firstName, String lastName, int age, String adrress, String email, int phone) {
+    public User(String id, String nickname, String password, String firstName, String lastName, int age, String address, String email, int phone, String description) {
         this.setId(id);
         this.setNickname(nickname);
         this.setPassword(password);
         this.setFirstName(firstName);
         this.setLastName(lastName);
         this.setAge(age);
-        this.setAdrress(adrress);
+        this.setAddress(address);
         this.setEmail(email);
         this.setPhone(phone);
+        this.setDescription(description);
     }
 
     public User(String id, String firstName) {
@@ -91,12 +93,12 @@ public class User {
         return this;
     }
 
-    public String getAdrress() {
-        return adrress;
+    public String getAddress() {
+        return address;
     }
 
-    public User setAdrress(String adrress) {
-        this.adrress = adrress;
+    public User setAddress(String address) {
+        this.address = address;
         return this;
     }
 
@@ -115,6 +117,15 @@ public class User {
 
     public User setPhone(int phone) {
         this.phone = phone;
+        return this;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public User  setDescription(String description) {
+        this.description = description;
         return this;
     }
 }
