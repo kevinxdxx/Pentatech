@@ -7,7 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:outputLabel value="To Show Users"/>
-    <h:dataTable value="#{ptBean.users}" var="user">
+    <h:dataTable value="#{userBean.users}" var="user">
 
         <h:column>
             <f:facet name="header">Id</f:facet>
@@ -57,14 +57,14 @@
         <h:column>
             <f:facet name="header">Pentactions</f:facet>
             <h:form>
-                <h:commandButton value="Edit User" action="#{ptBean.editUser(user)}"/>
-                <h:commandButton value="Update" action="#{ptBean.updateUser(user)}"/>
+                <h:commandButton value="Edit User" action="#{userBean.editUser(user)}"/>
+                <h:commandButton value="Update" action="#{userBean.updateUser(user)}"/>
             </h:form>
         </h:column>
 
     </h:dataTable>
     <h:form>
-        <h:commandButton value="Create User" action="#{ptBean.createUser}"/>
+        <h:commandButton value="Create User" action="#{userBean.createUser}"/>
     </h:form>
 
 </f:view>

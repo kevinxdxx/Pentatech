@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccountsEntity extends BaseEntity{
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.accounts";
+    private static String DEFAULT_SQL = "SELECT * FROM pt.accounts";
 
     private List<Account> findByCriteria(String sql){
         List<Account> accounts;
@@ -16,8 +16,9 @@ public class AccountsEntity extends BaseEntity{
                 ResultSet resultSet = getConnection().createStatement().executeQuery(sql);
 
                 while (resultSet.next()) {
-                    Account account = new Account().setId(resultSet.getString("id_accounts"))
-                            .setType(resultSet.getString("accounts_type"));
+                    Account account = new Account().setId(resultSet.getInt("account_id"))
+                            .setName(resultSet.getString("account_name"))
+                            .setType(resultSet.getString("account_type"));
                 }
                 return accounts;
             } catch (SQLException e) {
@@ -32,17 +33,17 @@ public class AccountsEntity extends BaseEntity{
     }
 
     public Account findById(String id){
-        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE id_accounts=" + String.valueOf(id));
+        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE account_id=" + String.valueOf(id));
         return (accounts !=null ? accounts.get(0) : null);
     }
 
-    public Account findByType(String type){
-        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE type = ' " + type + "'");
+    /*public Account findByType(String type){
+        List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE account_type = ' " + type + "'");
         return (accounts != null ? accounts.get(0):null);
-    }
+    }*/
 
 
-    private int getMaxId() {
+    /*private int getMaxId() {
         String sql = "SELECT MAX(account_id) AS max_id FROM accounts";
         if (getConnection() != null) {
             try {
@@ -67,20 +68,18 @@ public class AccountsEntity extends BaseEntity{
             }
         }
         return 0;
-    }
+    }*/
 
 
 
-    public Account create(String type){
-        if (findByCriteria(type) == null){
-            if (getConnection() != null){
-                String sql = "INSERT INTO accounts(id_accounts, type) VALUES(" +
-                        String.valueOf(getMaxId() +1 ) +", '" + type + "')";
-                int result = updateByCriteria(sql);
-                if(result > 0){
-                    Account account = new Account(getMaxId(),type);
-                    return account  ;
-                }
+    public Account create(Account account){
+        if (getConnection() != null) {
+            try {
+                String sql = "INSERT INTO accounts(account_id,account_name,account_type,)"
+                        +"VALUES('"+account.getId()+"','"+ account.getName()+"','"+account.getType()+"')";
+                getConnection().createStatement().execute(sql);
+            }catch (SQLException e){
+                e.printStackTrace();
             }
         }
         return null;

@@ -1,50 +1,34 @@
 package pe.edu.pe.javawebuserlist.models;
 
-import java.util.List;
-
 public class User {
-    private String id;
+    private int id;
     private String nickname;
     private String password;
     private String firstName;
     private String lastName;
-    private int age;
-    private String address;
     private String email;
     private int phone;
     private String description;
 
-
-
-
     public User() {
     }
-    public User(String id, String nickname, String password, String firstName, String lastName, int age, String address, String email, int phone, String description) {
+    public User(int id, String nickname, String password, String firstName, String lastName,
+                String email, int phone, String description) {
         this.setId(id);
         this.setNickname(nickname);
         this.setPassword(password);
         this.setFirstName(firstName);
         this.setLastName(lastName);
-        this.setAge(age);
-        this.setAddress(address);
         this.setEmail(email);
         this.setPhone(phone);
         this.setDescription(description);
     }
 
-    public User(String id, String firstName) {
-
-    }
-
-    public User(List<User> users) {
-    }
-
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public User setId(String id) {
+    public User setId(int id) {
         this.id = id;
         return this;
     }
@@ -71,8 +55,8 @@ public class User {
         return firstName;
     }
 
-    public User setFirstName(String fisrtName) {
-        this.firstName = fisrtName;
+    public User setFirstName(String firstName) {
+        this.firstName = firstName;
         return this;
     }
 
@@ -85,7 +69,7 @@ public class User {
         return this;
     }
 
-    public int getAge() {
+    /*public int getAge() {
         return age;
     }
 
@@ -101,7 +85,7 @@ public class User {
     public User setAddress(String address) {
         this.address = address;
         return this;
-    }
+    }*/
 
     public String getEmail() {
         return email;

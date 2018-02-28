@@ -110,12 +110,10 @@ public class CommentsEntity extends BaseEntity
     }
 
     public boolean delete(int id){
-
         return updatebycriteria("DELETE FROM users WHERE id_comentary =" + String.valueOf(id)) > 0;
     }
 
     public boolean delete(String description){
-
         return updatebycriteria("DELETE FROM users WHERE description = '" + description + "'") > 0;
     }
 }
