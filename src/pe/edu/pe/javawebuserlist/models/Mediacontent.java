@@ -1,11 +1,11 @@
 package pe.edu.pe.javawebuserlist.models;
 
 public class Mediacontent {
-        private String id;
+        private int id;
         private String name;
         private String url;
 
-        public Mediacontent(String id, String name, String url) {
+        public Mediacontent(int id, String name, String url) {
             this.id = id;
             this.name = name;
             this.url = url;
@@ -14,11 +14,11 @@ public class Mediacontent {
     public Mediacontent() {
     }
 
-    public String getId() {
+    public int getId() {
             return id;
         }
 
-        public Mediacontent setId(String id) {
+        public Mediacontent setId(int id) {
             this.id = id;
             return this;
         }

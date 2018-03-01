@@ -7,18 +7,20 @@ import java.util.List;
 
 public class MediacontentsEntity extends BaseEntity
 {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.media_contents";
+    private static String DEFAULT_SQL = "SELECT * FROM pt.mediacontents";
 
     private List<Mediacontent> findByCriteria(String sql){
-        List<Mediacontent> mediacontents;
+        List<Mediacontent> mediacontents = new ArrayList<>();
         if (getConnection() !=null){
-            mediacontents =  new ArrayList<>();
+            //mediacontents =  new ArrayList<>();
             try {
                 ResultSet resultSet = getConnection()
                         .createStatement()
                         .executeQuery(sql);
                 while (resultSet.next()){
-                    Mediacontent mediacontent = new Mediacontent().setId(resultSet.getString("id_media_contents"))
+                    Mediacontent mediacontent = new Mediacontent()
+                            .setId(resultSet.getInt("mediacontent_id"))
+                            .setName(resultSet.getString("mediacontent_name"))
                             .setUrl(resultSet.getString("url"));
                 }
             } catch (SQLException e) {
@@ -32,13 +34,13 @@ public class MediacontentsEntity extends BaseEntity
     public List<Mediacontent> findAll(){
         return findByCriteria(DEFAULT_SQL);
     }
-    public Mediacontent findById(String id){
-        List<Mediacontent> mediacontents = findByCriteria(DEFAULT_SQL+ "WHERE id_media_contents = "+ String.valueOf(id));
+    public Mediacontent findById(int id){
+        List<Mediacontent> mediacontents = findByCriteria(DEFAULT_SQL+ "WHERE mediacontent_id = "+ String.valueOf(id));
         return (mediacontents != null ? mediacontents.get(0): null);
     }
 
     public Mediacontent findByUrl(String url){
-        List<Mediacontent> mediacontents = findByCriteria(DEFAULT_SQL + "WHERE url = " + String.valueOf(url));
+        List<Mediacontent> mediacontents = findByCriteria(DEFAULT_SQL + "WHERE mediacontent_url = '"+url+"'");
         return (mediacontents != null ? mediacontents.get(0): null);
     }
 }
