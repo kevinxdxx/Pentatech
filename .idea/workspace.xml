@@ -8,14 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/AccountsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/AccountsEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Comment.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Comment.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Postevent.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Postevent.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PosteventsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PosteventsEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PtDataStore.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PtDataStore.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PtService.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PtService.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Suscription.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Subscriber.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SuscriptionsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,30 +35,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountsEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/AccountsEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1388">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding>
-                <marker date="1519895368187" expanded="true" signature="2661:2826" ph="INSERT INTO accounts... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +71,6 @@
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/User.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Account.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Finalist.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Suscription.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java" />
@@ -126,15 +96,12 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/web/createUser.xhtml" />
         <option value="$PROJECT_DIR$/web/toShow.xhtml" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/CommentsEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/beans/PtBean.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/User.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Account.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/beans/UserBean.java" />
         <option value="$PROJECT_DIR$/web/registerMusic.xhtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/799067d9-8797-48d6-979c-605a16204ed8/console.sql" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/UsersEntity.java" />
         <option value="$PROJECT_DIR$/web/login.xhtml" />
         <option value="$PROJECT_DIR$/web/search.xhtml" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Postevent.java" />
@@ -143,6 +110,11 @@
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PtDataStore.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/AccountsEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Comment.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/CommentsEntity.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/User.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/UsersEntity.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" />
       </list>
     </option>
   </component>
@@ -159,7 +131,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -452,7 +424,7 @@
       <workItem from="1519345984152" duration="6322000" />
       <workItem from="1519771667313" duration="11481000" />
       <workItem from="1519888242437" duration="981000" />
-      <workItem from="1519894582402" duration="890000" />
+      <workItem from="1519894582402" duration="3134000" />
     </task>
     <task id="LOCAL-00001" summary="Class Instrument">
       <created>1518128151759</created>
@@ -699,15 +671,28 @@
       <option name="project" value="LOCAL" />
       <updated>1519889072732</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="cmmmt">
+      <created>1519895523731</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1519895523731</updated>
+    </task>
+    <task id="LOCAL-00037" summary="cmmmt us">
+      <created>1519897329677</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1519897329677</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58568000" />
+    <option name="totallyTimeSpent" value="60812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21044046" sideWeight="0.5030257" order="13" side_tool="true" content_ui="tabs" />
@@ -716,7 +701,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1323752" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28089887" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -731,7 +716,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30560273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -764,11 +749,13 @@
     <MESSAGE value="PtBean" />
     <MESSAGE value="createUser" />
     <MESSAGE value="login" />
-    <option name="LAST_COMMIT_MESSAGE" value="login" />
+    <MESSAGE value="cmmmt" />
+    <MESSAGE value="cmmmt us" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmmmt us" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -777,13 +764,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/PlacesEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,14 +832,6 @@
     <entry file="file://$PROJECT_DIR$/web/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Aaaaa.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/controllers/UsersServlets.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/find.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -941,31 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/CommentsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="115" column="19" lean-forward="false" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#908#909#0" expanded="false" />
-            <element signature="e#939#940#0" expanded="false" />
-            <element signature="e#1923#1924#0" expanded="false" />
-            <element signature="e#1951#1952#0" expanded="false" />
-            <element signature="e#2077#2078#0" expanded="false" />
-            <element signature="e#2105#2106#0" expanded="false" />
-            <element signature="e#2237#2238#0" expanded="false" />
-            <element signature="e#2271#2272#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,16 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/UsersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
-          <folding>
-            <marker date="1519894505241" expanded="true" signature="2889:3268" ph="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
@@ -1120,6 +1057,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/CommentsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <marker date="1519896681193" expanded="true" signature="3254:3284" ph="SELECT(id_co... comentarys" />
+            <marker date="1519896681193" expanded="true" signature="3254:3292" ph="SELECT(comme... comments" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="136" column="20" lean-forward="false" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+          <folding>
+            <element signature="e#2816#2817#0" expanded="true" />
+            <element signature="e#2846#2847#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3014#3015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2141">
+          <caret line="130" column="30" lean-forward="false" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
+          <folding>
+            <marker date="1519897309107" expanded="true" signature="3222:3258" ph="SELECT MAX(u... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
         </state>
       </provider>

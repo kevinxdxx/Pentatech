@@ -7,13 +7,14 @@ import java.util.List;
 
 public class CommentsEntity extends BaseEntity
 {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.comentarys";
-    private List<Comment> findByCriteria(String sql)
+    private static String DEFAULT_SQL = "SELECT * FROM pt.comments";
+    private List<Comment> findByCriteria(String sql,UsersEntity usersEntity,AccountsEntity accountsEntity,
+                                         GendersEntity gendersEntity)
     {
-        List<Comment> comments;
+        List<Comment> comments = new ArrayList<>();
         if (getConnection() != null)
         {
-            comments = new ArrayList<>();
+            /*comments = new ArrayList<>();*/
             try
             {
                 ResultSet resultSet = getConnection()
@@ -21,9 +22,14 @@ public class CommentsEntity extends BaseEntity
                         .executeQuery(sql);
                 while (resultSet.next())
                 {
-                    Comment comment = new Comment()
-                            .setId(resultSet.getString("id_comentary"))
-                            .setDescription(resultSet.getString("description"));
+                    Comment comment = new Comment(
+                            resultSet.getInt("comment_id"),
+                            resultSet.getString("comment_description"),
+                            resultSet.getString("created_in"),
+                            usersEntity.
+                                    findById(resultSet
+                                                    .getInt("user_id"),accountsEntity,gendersEntity)
+                    );
                     comments.add(comment);
                 }
                 return comments;
@@ -35,28 +41,31 @@ public class CommentsEntity extends BaseEntity
         return null;
     }
 
-    public List<Comment> findAll()
+    public List<Comment> findAll(UsersEntity usersEntity, AccountsEntity accountsEntity,
+                                 GendersEntity gendersEntity)
     {
-        return findByCriteria(DEFAULT_SQL);
+        return findByCriteria(DEFAULT_SQL,usersEntity,accountsEntity,gendersEntity);
     }
 
-    public Comment findById(String id) {
+    public Comment findById(int id,UsersEntity usersEntity, AccountsEntity accountsEntity,
+                            GendersEntity gendersEntity) {
         List<Comment> comments = findByCriteria(DEFAULT_SQL +
-                " WHERE id_comentary = "+ String.valueOf(id));
+                " WHERE comment_id = "+ String.valueOf(id),usersEntity,accountsEntity,gendersEntity);
         return (comments != null ? comments.get(0) : null);
     }
 
-    public Comment findByDescription(String description) {
+    public Comment findByDescription(String description,UsersEntity usersEntity,AccountsEntity accountsEntity,
+                                     GendersEntity gendersEntity) {
         List<Comment> comments = findByCriteria(DEFAULT_SQL +
-                " WHERE description = "+ String.valueOf(description));
+                " WHERE comment_description = '"+ description+"'",usersEntity,accountsEntity,gendersEntity);
         return (comments != null ? comments.get(0) : null);
     }
 
-    public Comment findAll(String description){
+    /*public Comment findAll(String description){
         List<Comment> comments = findByCriteria(DEFAULT_SQL+
                 "WHERE description = '"+description + "'");
         return(comments != null ? comments.get(0) : null);
-    }
+    }*/
 
     private  int updatebycriteria(String sql)
     {
@@ -75,8 +84,8 @@ public class CommentsEntity extends BaseEntity
         return 0;
     }
 
-    private String getId(){
-        String sql = "SELECT(id_comentary) AS id FROM comentarys ";
+    private int getId(){
+        String sql = "SELECT(comment_id) AS id FROM comments ";
 
         if(getConnection() != null){
             ResultSet resultSet = null;
@@ -85,35 +94,35 @@ public class CommentsEntity extends BaseEntity
                         .createStatement()
                         .executeQuery(sql);
                 return resultSet.next() ?
-                        resultSet.getString("id_comentary") : null;
+                        resultSet.getInt("comment_id") : 500;
             } catch (SQLException e) {
                 e.printStackTrace();
             }
 
         }
-        return null;
+        return 0;
     }
 
-    public  Comment create(String description){
-        if(findByDescription(description) == null){
+    public  Comment create(String description,String createdIn,UsersEntity usersEntity){
+        //if(findByDescription(description) == null){
             if(getConnection() != null){
-                String sql = "INSERT INTO description(id_comentary,description)" +
-                        "VALUES(" + String.valueOf(getId()) + ", '"+description+"')";
+                String sql = "INSERT INTO comments(comment_id,comment_description,created_in)" +
+                        "VALUES(" + String.valueOf(getId()) + ", '"+description+"'"+createdIn+"')";
                 int results = updatebycriteria(sql);
-                if(results > 0){
+                if(results > 500){
                     Comment comment = new Comment();
                     return comment;
                 }
             }
-        }
+        //}
         return null;
     }
 
     public boolean delete(int id){
-        return updatebycriteria("DELETE FROM users WHERE id_comentary =" + String.valueOf(id)) > 0;
+        return updatebycriteria("DELETE FROM comments WHERE comment_id =" + String.valueOf(id)) > 500;
     }
 
     public boolean delete(String description){
-        return updatebycriteria("DELETE FROM users WHERE description = '" + description + "'") > 0;
+        return updatebycriteria("DELETE FROM comments WHERE commmet_description = '" + description + "'") > 0;
     }
 }
