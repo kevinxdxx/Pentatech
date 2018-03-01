@@ -9,19 +9,24 @@ public class User {
     private String email;
     private int phone;
     private String description;
+    private Account account;
+    private Gender gender;
 
     public User() {
     }
-    public User(int id, String nickname, String password, String firstName, String lastName,
-                String email, int phone, String description) {
-        this.setId(id);
-        this.setNickname(nickname);
-        this.setPassword(password);
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setEmail(email);
-        this.setPhone(phone);
-        this.setDescription(description);
+    public User(int maxId, String nickname, String password, String firstName, String lastName, String email, int phone, String description, AccountsEntity accountsEntity, GendersEntity gendersEntity) {
+    }
+    public User(int user_id, String user_nickname, String user_password, String user_firstname, String user_lastname, String user_email, int user_phone, String user_description, Account accounts_id, Gender gender_id) {
+        this.id = id;
+        this.nickname = nickname;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.description = description;
+        this.setAccount(getAccount());
+        this.setGender(getGender());
     }
 
     public int getId() {
@@ -111,6 +116,24 @@ public class User {
 
     public User  setDescription(String description) {
         this.description = description;
+        return this;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public User setAccount(Account account) {
+        this.account = account;
+        return this;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public User setGender(Gender gender) {
+        this.gender = gender;
         return this;
     }
 }
