@@ -8,8 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8a96c2cf-9726-4b47-b799-21ce05622a0f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" />
-      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Subscriber.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Subscriber.java" />
+      <change beforePath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +37,18 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SubscribersEntity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="41" column="86" lean-forward="false" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Instrument.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Singer.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/Gender.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/User.java" />
@@ -73,12 +85,10 @@
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Finalist.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Suscription.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/EventsEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Event.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SuscriptionsEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/PlacesEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java" />
         <option value="$PROJECT_DIR$/web/css/estilos.css" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/RegionsBean.java" />
@@ -115,6 +125,10 @@
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/UsersEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Mediacontent.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/MediacontentsEntity.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Subscriber.java" />
+        <option value="$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java" />
       </list>
     </option>
   </component>
@@ -424,7 +438,7 @@
       <workItem from="1519345984152" duration="6322000" />
       <workItem from="1519771667313" duration="11481000" />
       <workItem from="1519888242437" duration="981000" />
-      <workItem from="1519894582402" duration="3134000" />
+      <workItem from="1519894582402" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="Class Instrument">
       <created>1518128151759</created>
@@ -685,14 +699,22 @@
       <option name="project" value="LOCAL" />
       <updated>1519897329677</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="cmmmt med">
+      <created>1519897736030</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1519897736030</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60812000" />
+    <option name="totallyTimeSpent" value="61872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21044046" sideWeight="0.5030257" order="13" side_tool="true" content_ui="tabs" />
@@ -716,7 +738,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30560273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13971743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -751,7 +773,8 @@
     <MESSAGE value="login" />
     <MESSAGE value="cmmmt" />
     <MESSAGE value="cmmmt us" />
-    <option name="LAST_COMMIT_MESSAGE" value="cmmmt us" />
+    <MESSAGE value="cmmmt med" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmmmt med" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -764,24 +787,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/PlacesEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/img/fondo2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/fondo1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1110,6 +1115,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/PlacesEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/Subscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/pe/javawebuserlist/models/SubscribersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="41" column="86" lean-forward="false" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
           <folding />
         </state>
       </provider>

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PlacesEntity extends BaseEntity
 {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.places";
+    private static String DEFAULT_SQL = "SELECT * FROM pt.places";
 
     private List<Place> findByCriteria(String sql)
     {
@@ -21,9 +21,10 @@ public class PlacesEntity extends BaseEntity
                         .executeQuery(sql);
                 while (resultSet.next())
                 {
-                    Place place = new Place().setId(resultSet.getString("id_place"))
-                            .setName(resultSet.getString("site"));
+                    Place place = new Place().setId(resultSet.getInt("place_id"))
+                            .setName(resultSet.getString("place_name"));
                 }
+                return places;
             } catch (SQLException e)
             {
                 e.printStackTrace();
@@ -36,13 +37,13 @@ public class PlacesEntity extends BaseEntity
     public List<Place> findAll(){
         return findByCriteria(DEFAULT_SQL);
     }
-    public Place findById(String id){
-        List<Place> places = findByCriteria(DEFAULT_SQL+ "WHERE id_place = "+ String.valueOf(id));
+    public Place findById(int id){
+        List<Place> places = findByCriteria(DEFAULT_SQL+ "WHERE place_id = "+ String.valueOf(id));
         return (places != null ? places.get(0): null);
     }
 
     public Place findByName(String name){
-        List<Place> places = findByCriteria(DEFAULT_SQL + "WHERE site = " + String.valueOf(name));
+        List<Place> places = findByCriteria(DEFAULT_SQL + "WHERE place_name = '" +name+"'");
         return (places != null ? places.get(0): null);
     }
 }

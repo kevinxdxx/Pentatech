@@ -1,10 +1,10 @@
 package pe.edu.pe.javawebuserlist.models;
 
 public class Place {
-    private String id;
+    private int id;
     private String name;
 
-    public Place(String id, String name) {
+    public Place(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -12,11 +12,11 @@ public class Place {
     public Place() {
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public Place setId(String id) {
+    public Place setId(int id) {
         this.id = id;
         return this;
     }
