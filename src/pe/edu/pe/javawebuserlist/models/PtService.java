@@ -5,6 +5,7 @@ import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 public class PtService
 {
@@ -138,21 +139,24 @@ public class PtService
         return finalistsEntity;
     }
 
-    /*public List<User> findAllUsers()
+    public List<User> findAllUsers()
     {
-        return getUsersEntity() != null ?
-                getUsersEntity().findAll() : null;
+        return (getUsersEntity()!=null && getAccountsEntity()!=null&&getGendersEntity()!=null) ?
+        getUsersEntity().findAll(getAccountsEntity(),getGendersEntity()):null;
     }
 
-    public User findUserByFirstname(String firstName)
+    public User findUserByFirstname(String firstName, AccountsEntity accountsEntity,
+                                    GendersEntity gendersEntity)
     {
         return getUsersEntity() != null ?
-                getUsersEntity().findByFirstname(firstName) : null;
-    }*/
+                getUsersEntity().findByFirstname(firstName,accountsEntity,gendersEntity) : null;
+    }
 
-    public User createUser(User user) {
+    public User createUser(String nickname,String password,String firstName, String lastName,
+                           String email, int phone, String description) {
         return getUsersEntity() != null ?
-                getUsersEntity().create(user) : null;
+                getUsersEntity().create(nickname,password,firstName,lastName,
+                        email,phone,description,accountsEntity,gendersEntity) : null;
     }
 
     public Account createAccount(Account account)
