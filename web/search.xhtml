@@ -25,15 +25,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Pentatech</a>
+            <a class="navbar-brand" href="#">Melody Band</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="comentary.jsp">Home</a></li>
-                <li><a href="aboutUs.jsp">Quienes somos</a></li>
+                <li><a href="index.xhtml">Home</a></li>
+                <li><a href="about.xhtml">About Us</a></li>
                 <li class="active"><a href="search.xhtml">Find Musics</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#login">Log In</a></li>
+                <li><a href="event.xhtml">Events</a></li>
+                <li><a href="login.xhtml">Log In</a></li>
                 <li><a href="singM.xhtml">Sing Up Music</a></li>
                 <li><a href="singO.xhtml">Sing Up Organizer</a></li>
             </ul>
@@ -43,7 +43,7 @@
 <h:body style="background-color:#5bc0de">
     <b:container>
         <b:row>
-            <b:dataTable value="#{userBean.user}" var="region">
+            <b:dataTable value="#{userBean.user}" var="user">
                 <b:dataTableColumn>
                     <f:facet name="header">Músico</f:facet>
                     #{userBean.nickname}}
