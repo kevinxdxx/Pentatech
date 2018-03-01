@@ -1,24 +1,26 @@
 package pe.edu.pe.javawebuserlist.models;
 
 public class Comment {
-    private String id;
+    private int id;
     private String description;
     private String CreatedIn;
-
-    public Comment(String id, String description, String createdIn) {
-        this.id = id;
-        this.description = description;
-        CreatedIn = createdIn;
-    }
+    private User user;
 
     public Comment() {
     }
 
-    public String getId() {
+    public Comment(int id, String description, String createdIn, User user) {
+        this.id = id;
+        this.description = description;
+        CreatedIn = createdIn;
+        this.setUser(user);
+    }
+
+    public int getId() {
         return id;
     }
 
-    public Comment setId(String id) {
+    public Comment setId(int id) {
         this.id = id;
         return this;
     }
@@ -38,6 +40,15 @@ public class Comment {
 
     public Comment setCreatedIn(String createdIn) {
         CreatedIn = createdIn;
+        return this;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public Comment setUser(User user) {
+        this.user = user;
         return this;
     }
 }

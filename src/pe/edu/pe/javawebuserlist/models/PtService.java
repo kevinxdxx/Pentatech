@@ -16,8 +16,8 @@ public class PtService
     private EventsEntity eventsEntity;
     private MediacontentsEntity mediacontentsEntity;
     private PlacesEntity placesEntity;
-    private PosteventsEntity posteventsEntity;
-    private SuscriptionsEntity suscriptionsEntity;
+    /*private PosteventsEntity posteventsEntity;*/
+    private SubscribersEntity subscribersEntity;
     private FinalistsEntity finalistsEntity;
 
     private Connection getConnection()
@@ -108,7 +108,7 @@ public class PtService
         return placesEntity;
     }
 
-    protected PosteventsEntity getPosteventsEntity() {
+    /*protected PosteventsEntity getPosteventsEntity() {
         if (getConnection() != null) {
             if (posteventsEntity == null) {
                 posteventsEntity = new PosteventsEntity();
@@ -116,16 +116,16 @@ public class PtService
             }
         }
         return posteventsEntity;
-    }
+    }*/
 
-    protected SuscriptionsEntity getSuscriptionsEntity() {
+    protected SubscribersEntity getSubscribersEntity() {
         if (getConnection() != null) {
-            if (suscriptionsEntity == null) {
-                suscriptionsEntity = new SuscriptionsEntity();
-                suscriptionsEntity.setConnection(getConnection());
+            if (subscribersEntity == null) {
+                subscribersEntity = new SubscribersEntity();
+                subscribersEntity.setConnection(getConnection());
             }
         }
-        return suscriptionsEntity;
+        return subscribersEntity;
     }
 
     protected FinalistsEntity getFinalistsEntity() {

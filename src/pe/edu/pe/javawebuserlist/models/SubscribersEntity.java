@@ -6,19 +6,19 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SuscriptionsEntity extends BaseEntity
+public class SubscribersEntity extends BaseEntity
 {
     private static String DEFAULT_SQL ="SELECT * FROM pt_mysql.suscribers";
-    private List<Suscription>findByCriteria(String sql){
-        List<Suscription> suscriptions;
+    private List<Subscriber>findByCriteria(String sql){
+        List<Subscriber> subscribers;
         if (getConnection() !=null){
-            suscriptions = new ArrayList<>();
+            subscribers = new ArrayList<>();
             try {
                 ResultSet resultSet = getConnection()
                         .createStatement()
                         .executeQuery(sql);
                 while (resultSet.next()){
-                    Suscription suscription = new Suscription().setId(resultSet.getString("id_subscribers"));
+                    Subscriber subscriber = new Subscriber().setId(resultSet.getString("id_subscribers"));
                 }
 
             } catch (SQLException e){
@@ -27,12 +27,12 @@ public class SuscriptionsEntity extends BaseEntity
         }
         return null;
     }
-    public List<Suscription>findAll(){
+    public List<Subscriber>findAll(){
         return findByCriteria(DEFAULT_SQL);
     }
-    public Suscription findById(String id){
-        List<Suscription> suscriptions = findByCriteria(DEFAULT_SQL+"WHERE id_subscribers ="+ String.valueOf(id));
-        return (suscriptions !=null ? suscriptions.get(0): null);
+    public Subscriber findById(String id){
+        List<Subscriber> subscribers = findByCriteria(DEFAULT_SQL+"WHERE id_subscribers ="+ String.valueOf(id));
+        return (subscribers !=null ? subscribers.get(0): null);
     }
 
 

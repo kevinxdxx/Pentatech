@@ -1,4 +1,4 @@
-package pe.edu.pe.javawebuserlist.models;
+/*package pe.edu.pe.javawebuserlist.models;
 
 public class Postevent {
     private String id;
@@ -41,3 +41,4 @@ public class Postevent {
         return this;
     }
 }
+*/

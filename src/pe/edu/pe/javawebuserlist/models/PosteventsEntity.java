@@ -1,4 +1,4 @@
-package pe.edu.pe.javawebuserlist.models;
+/*package pe.edu.pe.javawebuserlist.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -44,3 +44,4 @@ public class PosteventsEntity extends BaseEntity
         return (postevents != null ? postevents.get(0): null);
     }
 }
+*/

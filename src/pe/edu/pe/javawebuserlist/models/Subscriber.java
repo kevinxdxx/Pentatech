@@ -1,20 +1,20 @@
 package pe.edu.pe.javawebuserlist.models;
 
-public class Suscription {
+public class Subscriber {
     private String id;
 
-    public Suscription(String id) {
+    public Subscriber(String id) {
         this.setId(id);
     }
 
-    public Suscription() {
+    public Subscriber() {
     }
 
     public String getId() {
         return id;
     }
 
-    public Suscription setId(String id) {
+    public Subscriber setId(String id) {
         this.id = id;
         return this;
     }

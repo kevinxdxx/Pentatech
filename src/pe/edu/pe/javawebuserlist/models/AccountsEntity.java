@@ -28,11 +28,13 @@ public class AccountsEntity extends BaseEntity{
         return null;
     }
 
-    public List<Account> findAll(){
-        return findByCriteria(DEFAULT_SQL);
+    public Account findByNameType(String name, String type){
+        List<Account> accounts= findByCriteria(DEFAULT_SQL+
+                "WHERE account_name='"+name+"'AND account_type= '"+type+"'");
+        return (accounts != null ? accounts.get(0) : null);
     }
 
-    public Account findById(String id){
+    public Account findById(int id){
         List<Account> accounts = findByCriteria(DEFAULT_SQL + "WHERE account_id=" + String.valueOf(id));
         return (accounts !=null ? accounts.get(0) : null);
     }
