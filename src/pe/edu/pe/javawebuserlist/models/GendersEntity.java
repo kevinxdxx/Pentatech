@@ -7,7 +7,7 @@ import java.util.List;
 
 public class GendersEntity extends BaseEntity
 {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.genders";
+    private static String DEFAULT_SQL = "SELECT * FROM pt.genders";
     private List<Gender> findByCriteria(String sql)
     {
         List<Gender> genders;
@@ -21,7 +21,7 @@ public class GendersEntity extends BaseEntity
                         .executeQuery(sql);
                 while (resultSet.next())
                 {
-                    Gender gender = new Gender().setId(resultSet.getString("id_gender"))
+                    Gender gender = new Gender().setId(resultSet.getInt("id_gender"))
                             .setDescription(resultSet.getString("description"));
                 }
             } catch (SQLException e)
@@ -36,7 +36,7 @@ public class GendersEntity extends BaseEntity
     public List<Gender> findAll(){
         return findByCriteria(DEFAULT_SQL);
     }
-    public Gender findById(String id){
+    public Gender findById(int id){
         List<Gender> genders = findByCriteria(DEFAULT_SQL+ "WHERE id_gender = "+ String.valueOf(id));
         return (genders != null ? genders.get(0): null);
     }

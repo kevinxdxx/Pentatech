@@ -1,10 +1,10 @@
 package pe.edu.pe.javawebuserlist.models;
 
 public class Gender {
-    private String id;
+    private int id;
     private String description;
 
-    public Gender(String id, String description) {
+    public Gender(int id, String description) {
         this.setId(id);
         this.setDescription(description);
     }
@@ -12,11 +12,11 @@ public class Gender {
     public Gender() {
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public Gender setId(String id) {
+    public Gender setId(int id) {
         this.id = id;
         return this;
     }
