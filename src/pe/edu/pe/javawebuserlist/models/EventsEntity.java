@@ -6,20 +6,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EventsEntity extends BaseEntity {
-    private static String DEFAULT_SQL = "SELECT * FROM pt_mysql.events";
+    private static String DEFAULT_SQL = "SELECT * FROM pt.events";
 
-    private List<Event> findByCriteria(String sql){
-        List<Event> events;
+    private List<Event> findByCriteria(String sql, CommentsEntity commentsEntity, AccountsEntity accountsEntity,
+                                       GendersEntity gendersEntity, UsersEntity usersEntity, PlacesEntity placesEntity,
+                                       MediacontentsEntity mediacontentsEntity){
+        List<Event> events =  new ArrayList<>();
         if (getConnection() !=null){
-            events =  new ArrayList<>();
+           // events =  new ArrayList<>();
             try {
                 ResultSet resultSet = getConnection()
                         .createStatement()
                         .executeQuery(sql);
                 while (resultSet.next()){
-                    Event event = new Event().setId(resultSet.getString("id_event"))
-                            .setDate(resultSet.getString("event_date"));
+                    Event event = new Event(
+                            resultSet.getInt("event_id"),
+                            resultSet.getString("event_date"),
+                                    gendersEntity
+                                            .findById(resultSet
+                                                    .getInt("accounts_id")),
+                                    placesEntity.
+                                            findById(resultSet
+                                                    .getInt("gender_id")),
+                                    mediacontentsEntity.
+                                            findById(resultSet
+                                                    .getInt("mediacontent_id")),
+                                    commentsEntity.
+                                            findById(resultSet
+                                                    .getInt("comment_id"),usersEntity,accountsEntity,gendersEntity));
+                            /*.setDate(resultSet.getString("event_date"));*/
                 }
+                return events;
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -27,16 +44,25 @@ public class EventsEntity extends BaseEntity {
         }
         return null;
     }
-    public List<Event> findAll(){
-        return findByCriteria(DEFAULT_SQL);
+    public List<Event> findAll(CommentsEntity commentsEntity, AccountsEntity accountsEntity,
+                               GendersEntity gendersEntity, UsersEntity usersEntity, PlacesEntity placesEntity,
+                               MediacontentsEntity mediacontentsEntity){
+        return findByCriteria(DEFAULT_SQL, commentsEntity,accountsEntity,gendersEntity,usersEntity,placesEntity,
+                mediacontentsEntity);
     }
-    public Event findById(String id){
-        List<Event> events = findByCriteria(DEFAULT_SQL+ "WHERE id_event = "+ String.valueOf(id));
+    public Event findById(int id,CommentsEntity commentsEntity, AccountsEntity accountsEntity,
+                          GendersEntity gendersEntity, UsersEntity usersEntity, PlacesEntity placesEntity,
+                          MediacontentsEntity mediacontentsEntity){
+        List<Event> events = findByCriteria(DEFAULT_SQL+ "WHERE event_id = "+ String.valueOf(id),commentsEntity,
+                accountsEntity,gendersEntity,usersEntity,placesEntity,mediacontentsEntity);
         return (events != null ? events.get(0): null);
     }
 
-    public Event findByDate(String date){
-        List<Event> events = findByCriteria(DEFAULT_SQL + "WHERE date = " + String.valueOf(date));
+    public Event findByDate(String date, CommentsEntity commentsEntity, AccountsEntity accountsEntity,
+                            GendersEntity gendersEntity, UsersEntity usersEntity, PlacesEntity placesEntity,
+                            MediacontentsEntity mediacontentsEntity){
+        List<Event> events = findByCriteria(DEFAULT_SQL + "WHERE event_date = " +date+"'",commentsEntity,
+                accountsEntity,gendersEntity,usersEntity,placesEntity, mediacontentsEntity);
         return (events != null ? events.get(0): null);
     }
 
